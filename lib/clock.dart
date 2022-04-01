@@ -54,7 +54,7 @@ class _ClockState extends State<Clock> with TickerProviderStateMixin {
 
     hours_Hand_AnimationController =
         AnimationController(vsync: this, duration: const Duration(seconds: 1));
-    // var hcurved = CurvedAnimation(parent: hours_Hand_AnimationController, curve: Curves.easeInOutBack);
+
     minutes_Hand_AnimationController =
         AnimationController(vsync: this, duration: const Duration(seconds: 1));
     var minute_curved = CurvedAnimation(
