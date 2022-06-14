@@ -1,27 +1,21 @@
-import 'package:animation/clock.dart';
+import 'package:animation/AlarmClock/Screens/clock_screen.dart';
+import 'package:animation/Clock/clock.dart';
+import 'package:animation/DragAndDrop/drag_and_drop.dart';
+import 'package:animation/GradientAnimation/gradient_animation.dart';
 import 'package:flutter/material.dart';
 
 void main() {
-  runApp(const Home());
+  runApp(const Main());
 }
 
-class Home extends StatefulWidget {
-  const Home({Key? key}) : super(key: key);
+class Main extends StatelessWidget {
+  const Main({Key? key}) : super(key: key);
 
-  @override
-  State<Home> createState() => _HomeState();
-}
-
-class _HomeState extends State<Home> {
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(
-        home: Scaffold(
-      body: Container(
-        alignment: Alignment.center,
-        color: const Color(0xFF272121),
-        child: const Clock(),
-      ),
-    ));
+    return const MaterialApp(
+      home: AlarmClock(),
+      debugShowCheckedModeBanner: false,
+    );
   }
 }
